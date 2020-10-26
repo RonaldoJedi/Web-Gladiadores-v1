@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gladiador Sim. Teste</title>
+    <link rel="stylesheet" href="./main.bundle.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>GLADIATOR SIMULATOR!</h1>
+    </div>
+    <div style="display: flex; justify-content: center; background: #004882">
+      <h1 style="color: firebrick; text-transform: uppercase">
+        Escolha seus gladiadores
+      </h1>
+    </div>
+    <div class="background">
+      <br />
+      <div class="container-flex box">
+        <select id="glad1" name="glad1" style="width: 200px"></select>
+
+        <select id="glad2" name="glad2" style="width: 200px"></select>
+      </div>
+
+      <p style="text-align: center; font-size: 3rem; font-style: italic">
+        Vencedor
+      </p>
+      <div class="resultado">
+        <h1
+          id="resultado"
+          style="
+            width: 500px;
+            height: 100px;
+            text-align: center;
+            border: 2px solid black;
+            margin: 5px;
+            font-size: 2rem;
+          "
+        >
+          aqui fica o nome do vencedor
+        </h1>
+      </div>
+      <div class="button" style="display: flex">
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="btn-batalha"
+          style="text-align: center; font-size: small; margin-right: 10px"
+        >
+          Batalhar
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          id="btn-limpar-console"
+          style="text-align: center; font-size: small"
+        >
+          Limpar console
+        </button>
+      </div>
+      <h1 style="text-align: center">Log da batalha</h1>
+      <div  style="display: flex; justify-content: center;">
+        <textarea id="batalha-log" style=" border: 1px solid green;
+    padding: 10px; height: 200px; width: 600px; background-color: white; text-align: center; " placeholder="aqui fica os logs da batalha" disabled="true" ></textarea>
+      </div>
+      <br />
+    </div>
+    <h1
+      style="
+        text-align: center;
+        background: linear-gradient(green, blue);
+        margin: 0 auto;
+        color: yellow;
+      "
+    >
+      Mural dos Gladiadores
+    </h1>
+    <div
+      class="mural-div"
+      id="mural-div"
+      style="display: flex; justify-content: center; background: firebrick"
+    ></div>
+    <div class="hm"></div>
+    <script src="./indexJs.bundle.js"></script>
+    <script src="./indexController.bundle.js"></script>
+  </body>
+</html>
